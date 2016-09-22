@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.3kwebdesign\.com$
+RewriteRule ^/?$ "http\:\/\/3kwebdesign\.com\/" [R=301,L]
