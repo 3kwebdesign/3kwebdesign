@@ -165,6 +165,7 @@ body{
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	bottom: 0;
 	z-index: 90;
 	background-color: rgba(0, 0, 0, 0.95);
@@ -308,19 +309,19 @@ body{
 	color: #b06f25;
 }
 
-#secondPart{
+#about{
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
 }
 
-#secondPart .left{
+#about .left{
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
 }
 
-#secondPart .left h2{
+#about .left h2{
 	color: #333;
 	width: 80%;
 	margin: 0 auto;
@@ -328,14 +329,14 @@ body{
 	text-align: center;
 }
 
-#secondPart .right{
+#about .right{
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
 	border-left: 5px solid #eee;
 }
 
-#secondPart .right p{
+#about .right p{
 	padding-left: 1em;
 	padding-right: 1em;
 	color: #333;
@@ -343,24 +344,24 @@ body{
 	line-height: 1.6;
 }
 
-#secondPart .right footer{
+#about .right footer{
 	display: block;
 	padding-left: 1em;
 	margin-top: .5em;
 	color: #777;
 }
 
-#secondPart .right footer::before{
+#about .right footer::before{
 	content: '\2014 \00A0';
 }
 
-#thirdPart{
+#reference{
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	background: #666666;
 }
 
-#thirdPart .column{
+#reference .column{
 	width: 48%;
 	background: white;
 	margin: 0 auto;
@@ -368,7 +369,7 @@ body{
 	position: relative;
 }
 
-#thirdPart .column .out{
+#reference .column .out{
 	position: absolute;
 	bottom: 7px;
 	color: gray;
@@ -378,37 +379,37 @@ body{
 	transition: color .5s;
 }
 
-#thirdPart .column .out:hover{
+#reference .column .out:hover{
 	color: #333;
 }
 
-#thirdPart .column .title h3{
+#reference .column .title h3{
 	text-align: center;
 	color: #333;
 	margin-bottom: .5em;
 	margin-top: .5em;
 }
 
-#thirdPart .newLineTop{
+#reference .newLineTop{
 	margin-top: 2em;
 	width: 100%;
 }
 
-#thirdPart .newLineBottom{
+#reference .newLineBottom{
 	margin-top: calc(2em - 2%);
 	width: 100%;
 }
 
-#thirdPart .column img{
+#reference .column img{
 	width: 100%;
 }
 
-#fourthPart{
+#contact{
 	background: url('../design/images/mailbox.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 
-#fourthPart .centerShadow{
+#contact .centerShadow{
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
@@ -422,12 +423,12 @@ body{
 	padding-bottom: 1.5em;
 }
 
-#fourthPart .centerShadow .contact{
+#contact .centerShadow .contact{
 	margin: 0 auto;
 	width: 75%;
 }
 
-#fourthPart .centerShadow .contact h2, #fifthPart .centerShadow .wrapper .title h2{
+#contact .centerShadow .contact h2, #fifthPart .centerShadow .wrapper .title h2{
 	font-size: 3em;
 	color: white;
 	font-family: 'Lato Light';
@@ -437,7 +438,7 @@ body{
 	margin-bottom: .5em;
 }
 
-#fourthPart .centerShadow .contact .innerTable{
+#contact .centerShadow .contact .innerTable{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -449,7 +450,7 @@ body{
 	        flex-direction: column;
 }
 
-#fourthPart .centerShadow .contact .innerTable .text{
+#contact .centerShadow .contact .innerTable .text{
 	width: 90%;
 	border: 3px solid rgba(153, 147, 147, .4);
 	color: #333;
@@ -457,23 +458,23 @@ body{
 	font-size: 16px;
 }
 
-#fourthPart .centerShadow .contact .innerTable .text:focus{
+#contact .centerShadow .contact .innerTable .text:focus{
 	outline: 0;
 }
 
-#fourthPart .centerShadow .contact .innerTable .left{
+#contact .centerShadow .contact .innerTable .left{
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
 }
 
-#fourthPart .centerShadow .contact .innerTable .row{
+#contact .centerShadow .contact .innerTable .row{
 	width: 100%;
 	text-align: center;
 	margin-top: 1em;
 }
 
-#fourthPart .centerShadow .contact .innerTable .row button{
+#contact .centerShadow .contact .innerTable .row button{
 	text-transform: uppercase;
 	background: #202058;
 	border: 0;
@@ -486,25 +487,25 @@ body{
 	transition: background .5s;
 }
 
-#fourthPart .centerShadow .contact .innerTable .row button:focus{
+#contact .centerShadow .contact .innerTable .row button:focus{
 	outline: 0;
 }
 
-#fourthPart .centerShadow .contact .innerTable .row button:hover{
+#contact .centerShadow .contact .innerTable .row button:hover{
 	background: #0E0E3D;
 	cursor: pointer;
 }
 
-#fourthPart .centerShadow .contact .innerTable .row button .blued{
+#contact .centerShadow .contact .innerTable .row button .blued{
 	display: inline-block;
 }
 
-#fourthPart .centerShadow .contact table{
+#contact .centerShadow .contact table{
 	width: 100%;
 	text-align: center;
 }
 
-#fourthPart .centerShadow .contact table tr td{
+#contact .centerShadow .contact table tr td{
 	padding-bottom: .5em;
 }
 
@@ -597,7 +598,7 @@ body{
 	background-size: 15%;
 }
 
-#sixthPart{
+#services{
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -609,7 +610,7 @@ body{
 	background: #06000a;
 }
 
-#sixthPart .centerTable{
+#services .centerTable{
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	width: 90%;
@@ -621,40 +622,40 @@ body{
 	        align-items: center;
 }
 
-#sixthPart .centerTable .column{
+#services .centerTable .column{
 	min-height: 450px;
 	width: calc(100% / 3);
 }
 
-#sixthPart .centerTable .column.firstColumn{
+#services .centerTable .column.firstColumn{
 	border-left: .5em solid #300032;
 	border-top: .5em solid #300032;
 	border-bottom: .5em solid #300032;
 }
 
-#sixthPart .centerTable .column.secondColumn{
+#services .centerTable .column.secondColumn{
 	border: .5em solid #c43235;
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
 
-#sixthPart .centerTable .column.lastColumn{
+#services .centerTable .column.lastColumn{
 	border-right: .5em solid #300032;
 	border-top: .5em solid #300032;
 	border-bottom: .5em solid #300032;
 }
 
-#sixthPart .centerTable .column .row{
+#services .centerTable .column .row{
 	min-height: 3em;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-#sixthPart .centerTable .column .row:nth-child(2n){
+#services .centerTable .column .row:nth-child(2n){
 	background: #300032;
 }
 
-#sixthPart .centerTable .column .row .textWrapper p.text{
+#services .centerTable .column .row .textWrapper p.text{
 	width: 100%;
 	text-align: center;
 	color: white;
@@ -663,7 +664,7 @@ body{
 	word-wrap: break-word;
 }
 
-#sixthPart .centerTable .column .row .textWrapper p.sub{
+#services .centerTable .column .row .textWrapper p.sub{
 	width: 100%;
 	word-wrap: break-word;
 	text-align: center;
@@ -672,7 +673,7 @@ body{
 	font-family: 'Open Sans';
 }
 
-#sixthPart .centerTable .column .row.center{
+#services .centerTable .column .row.center{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -684,7 +685,7 @@ body{
 	        justify-content: center;
 }
 
-#sixthPart .centerTable .column .title{
+#services .centerTable .column .title{
 	color: white;
 	text-align: center;
 	font-size: 1.5em;
@@ -700,33 +701,33 @@ body{
 		display: block;
 	}
 
-	#thirdPart{
+	#reference{
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
-	#thirdPart .column{
+	#reference .column{
 		width: 95%;
 	}
 
-	#fourthPart .centerShadow .contact .innerTable{
+	#contact .centerShadow .contact .innerTable{
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
-	#fourthPart .centerShadow .contact{
+	#contact .centerShadow .contact{
 		width: 90%;
 	}
 
-	#fourthPart .centerShadow .contact .innerTable .right{
+	#contact .centerShadow .contact .innerTable .right{
 		text-align: center;
 	}
 
-	#fourthPart .centerShadow .contact .innerTable .row button{
+	#contact .centerShadow .contact .innerTable .row button{
 		width: 100%;
 	}
 
@@ -735,38 +736,38 @@ body{
 		max-width: 100%;
 	}
 
-	#secondPart{
+	#about{
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 	}
 
-	#secondPart .left{
+	#about .left{
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
-    	-webkit-box-align: center;
+    	-webkit-box-align: centerxt
     	    -ms-flex-align: center;
     	        align-items: center;
 	}
 
-	#sixthPart .centerTable{
+	#services .centerTable{
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 	}
 
-	#sixthPart .centerTable .column {
+	#services .centerTable .column {
 		width: 100%;
 		margin-bottom: 1em;
 	}
 
-	#sixthPart .centerTable .column.firstColumn{
+	#services .centerTable .column.firstColumn{
 		border: .5em solid #300032;
 	}
-	#sixthPart .centerTable .column.lastColumn{
+	#services .centerTable .column.lastColumn{
 		border: .5em solid #300032;
 	}
 }
