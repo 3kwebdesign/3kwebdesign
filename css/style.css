@@ -71,7 +71,7 @@ body{
 }
 
 #header.scrolled_on {
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 #header .left { 
@@ -152,6 +152,17 @@ body{
 	cursor: pointer;
 	-webkit-transition: color .5s;
 	transition: color .5s;
+	-webkit-transition: transform .25s;
+	transition: transform .25s;
+	-ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+#header .right .slick-nav .slick-btn.scale {
+	-ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
 }
 
 #header .right .slick-nav .slick-btn:hover  { color: #b06f25; }
@@ -164,8 +175,8 @@ body{
 	visibility: hidden;
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 0;
+	right: -40%;
+	width: 40%;
 	bottom: 0;
 	z-index: 90;
 	background-color: rgba(0, 0, 0, 0.95);
@@ -175,10 +186,16 @@ body{
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+    -ms-transition: right 0.5s linear, visibility 0.5s;
+    -moz-transition: right 0.5s linear, visibility 0.5s;
+    -webkit-transition: right 0.5s linear, visibility 0.5s;
+    transition: right 0.5s linear, visibility 0.5s;
+    overflow: hidden;
 }
 
 #page.slick_menu_on #slick-menu {
 	visibility: visible;
+    right: 0;
 }
 
 #slick-menu .content {
@@ -224,6 +241,7 @@ body{
 	-webkit-box-flex: 0;
 	-ms-flex: 0;
 	flex: 0;
+	text-align: right;
 	padding: 0.5em 1em;
 }
 
@@ -239,6 +257,31 @@ body{
 #slick-menu .foot .socialSites .ico-envelope:hover {color: rgb(100, 255, 0);}
 #slick-menu .foot .socialSites .ico-twitter:hover  {color: rgb(0, 200, 255);}
 #slick-menu .foot .socialSites .ico-facebook:hover {color: rgb(0, 100, 255);}
+
+#slick-menu-shadow {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	-ms-transition: opacity 0.5s, right 0s, visibility 0.5s;
+    -moz-transition: opacity 0.5s, right 0s, visibility 0.5s;
+    -webkit-transition: opacity 0.5s, right 0s, visibility 0.5s;
+    transition: opacity 0.5s, right 0s, visibility 0.5s;
+}
+
+#page.slick_menu_on #slick-menu-shadow {
+	visibility: visible;
+	opacity: 1;
+	right: 40%;
+	-ms-transition: opacity 1s 0.5s;
+    -moz-transition: opacity 1s 0.5s;
+    -webkit-transition: opacity 1s 0.5s;
+    transition: opacity 1s 0.5s;
+}
 
 #intro{
 	background: url('../design/images/background.jpg') no-repeat center center fixed;
