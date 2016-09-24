@@ -1,0 +1,104 @@
+<div class="socialBar">
+	<a href="#">
+		<div class="fb-like" data-href="" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+	</a>
+
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="DanielOsicka">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+<div class="title">
+	<h2>HTML tutoriál #0 - první kroky</h2>
+</div>
+
+<div class="authorBar">
+	<div class="left">
+		<div class="fill">
+			<img src="design/images/authors/krul.jpg">
+			Daniel Krůl
+		</div>
+	</div>
+
+	<div class="right">
+		<i class="fa fa-calendar" aria-hidden="true"></i> 12. 9. 2016
+	</div>
+</div>
+
+<div class="textWrapper">
+	<div class="left">
+		<a href="#" title="Předchozí článek"><i class="fa fa-chevron-left"></i></a>
+	</div>
+
+	<div class="text">
+		<h3>Slovo úvodem...</h3>
+		<p>V prvé řadě bych Vás, drazí návštěvníci, chtěl přivítat u seriálu o HTML5. V tomto tutoriálu se naučíme tvořit webové stránky úplně od základů až po složitější weby. Tento jazyk je velice triviální, nicméně pro začínajícího webdesignéra nejdůležitější.</p>
+		<h3>Proč tutoriál vznikl?</h3>
+		<p>Dobrá otázka. Tento tutoriál vznikl z čistě pragmatických důvodů – zvětší celkovou návštěvnost, tím samozřejmě také počet zakázek, ale také vznikl na vlastní popud, kdy dost často narážím na tutoriály, které mají pár neduhů – buť obsahují málo textu a mnoho obrázků či je napsán stylem „vše z Wikipedie“. Tomuhle se chci širokým obloukem velikosti Francie vyhnouti a články psát snad téměř perfektním stylem, ale to sami můžete později ohodnotit.</p>
+		<h3><s>Trocha historie</s> Co je to HTML?</h3>
+		<p>Znát historii je sice důležité, nicméně zrovna znalost historie HTML je vcelku zbytečná. Pokud ovšem jste i tak zvědaví – zde je odkaz na <a href=“https://cs.wikipedia.org/wiki/HTML5“ target=“_blank“>Wikipedii</a>.
+HTML5 je nejnovější stabilní verze značkovacího jazyka HTML. Značkovací proto, protože používá systém značek – tagů, které se doplňují specifickými vlastnostmi – atributy.
+Webové prohlížeče tyto tagy vyrenderují = vykreslí podle určitých pravidlech a zobrazí konečný výsledek.
+Takový tag může vypadat takto:
+
+<code class="html">
+&lt;p&gt;Teal'c rád říká "Vskutku".&lt;/p&gt;
+</code>
+
+Tento párový tag je tvořen třemi prvky:
+<strong>&lt;p&gt;</strong> - počáteční tag, říká prohlížeči: „Pozor, teď přijde obsah tagu!“
+Následuje obsah tagu, který může obsahovat i další tagy – představte si to jako ruskou Matriošku.
+<strong>&lt;/p&gt;</strong> - koncový tag, říká prohlížeči: „Vykresli tag a přejdi na další.“
+
+Nicméně existují i tagy, které jsou nepárové:
+
+<strong>&lt;hr&gt;</strong> - tag, který vykreslí horizontální čáru
+
+Tyto tagy nemají žádný obsah, tudíž je zbytečné psát nepárové tagy s koncovým tagem.
+A jak vypadají atributy?
+Každý tag má specifické atributy, které jsou umístěny v počátečním tagu. Kupříkladu takhle:
+
+<code class="html">
+&lt;a href="http://google.cz"&gt;Google!&lt;/a&gt;
+</code>
+Tag odkazu, atribut <i>href</i> obsahuje URL v uvozovkách, kam nás kliknutí na odkaz přesměruje prohlížeč (v tomto případě na domovskou stránku Google). Jakmile kód spustíte v prohlížeči, uvítá vás modrý podtržený text „Google!“.
+</p>
+<h3>Ale v čem to mám psát?</h3>
+<p>Pro naše účely bude bohatě stačit i Poznámkový blok, který je sice na každém Windows, ale nezobrazuje syntaxi (obarvení kódu podle tagů) a celkově je možná primitivní až moc. Proto doporučuji kus geniálního softwaru Sublime Text 3, který je vskutku minimalistický, ale umí toho mnohdy více, než celé IDE.
+</p>
+		<div class="imageWrapper">
+			<img src="design/images/blog/sublime.png">
+			<footer>
+				Vidíte, že je editor vskutku minimalistický, ale s pluginy z něj jde postavit i celé IDE. Stáhnete zde: <a href="https://www.sublimetext.com/3">Sublime Text 3</a>
+			</footer>
+		</div>
+		<h3>Pár slov na závěr</h3>
+<p>To bude pro tento díl vše. V příštím díle se podíváme na základní tagy pro formátování textu a ukážeme si pár tipů pro Sublime text.
+Pokud se Vám díl líbil, nezapoměňte ho ohodnotit a případně přidat svůj názor do komentářů dole.</p>
+	</div>
+
+	<div class="right">
+		<a href="" title="Další článek"><i class="fa fa-chevron-right"></i></a>
+	</div>
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = '//3k-webdesign.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
