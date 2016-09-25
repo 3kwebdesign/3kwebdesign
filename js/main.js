@@ -189,66 +189,33 @@ Web.Contact = {
 };
 
 var Input = {
-	xDown: null,                                                     
-	yDown: null,
-	sLeft: false,
-	sRight: false,
-	sUp: false,
-	sDown: false,
-
 	init:function()
 	{
-		var handleTouchStart = function(e)
-		{                                         
-		    this.xDown = e.touches[0].clientX;                                      
-		    this.yDown = e.touches[0].clientY;                                      
-		};                                            
+		if(!this.isTouchDevice()) return;
 
-		var handleTouchMove = function(e)
+		var cfg = { inputClass: Hammer.SUPPORT_POINTER_EVENTS ? Hammer.PointerEventInput : Hammer.TouchInput };
+
+		this.hammer = new Hammer(document.body, cfg);
+
+		this.hammer.on('panleft', function(e)
 		{
-		    if (!this.xDown || !this.yDown) return;
+			if(Web.page.hasClass('slick_menu_off'))
+            {
+            	Web.Menu.toggleSlickMenu();
+            }
+		});
 
-		    var xUp = e.touches[0].clientX;                                    
-		    var yUp = e.touches[0].clientY;
+		this.hammer.on('panright', function(e)
+		{
+			if(Web.page.hasClass('slick_menu_on'))
+            {
+            	Web.Menu.toggleSlickMenu();
+            }
+		});
+	},
 
-		    var xDiff = xDown - xUp;
-		    var yDiff = yDown - yUp;
-
-		    if (Math.abs(xDiff) > Math.abs(yDiff))
-		    {
-		        if ( xDiff > 0 )
-		        {
-		            /* left swipe */
-		            if(Web.page.hasClass('slick_menu_off'))
-		            {
-		            	Web.Menu.toggleSlickMenu();
-		            }
-		        }
-		        else
-		        {
-		            /* right swipe */
-		            if(Web.page.hasClass('slick_menu_on'))
-		            {
-		            	Web.Menu.toggleSlickMenu();
-		            }
-		        }                       
-		    }
-		    else
-		    {
-		        if ( yDiff > 0 )
-		        {
-		            /* up swipe */ 
-		        }
-		        else { 
-		            /* down swipe */
-		        }                                                                 
-		    }
-
-		    xDown = null;
-		    yDown = null;                                             
-		};
-
-		document.addEventListener('touchstart', handleTouchStart, false);        
-		document.addEventListener('touchmove', handleTouchMove, false);
+	isTouchDevice: function()
+	{
+		return 'ontouchstart' in window || 'onmsgesturechange' in window;
 	}
 };
