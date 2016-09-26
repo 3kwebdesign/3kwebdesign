@@ -195,6 +195,8 @@ var Input = {
 
 		var cfg = { inputClass: Hammer.SUPPORT_POINTER_EVENTS ? Hammer.PointerEventInput : Hammer.TouchInput };
 
+		delete Hammer.defaults.cssProps.userSelect;
+		
 		this.hammer = new Hammer(document.body, cfg);
 
 		this.hammer.on('panleft', function(e)

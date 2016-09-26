@@ -191,9 +191,19 @@ body{
     -webkit-transition: right 0.5s linear, visibility 0.5s;
     transition: right 0.5s linear, visibility 0.5s;
     overflow: hidden;
+    -webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
 }
 
 #page.slick_menu_on #slick-menu {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
 	visibility: visible;
     right: 0;
 }
