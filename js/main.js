@@ -189,7 +189,7 @@ Web.Contact = {
 };
 
 var Input = {
-	init:function()
+	init: function()
 	{
 		if(!this.isTouchDevice()) return;
 

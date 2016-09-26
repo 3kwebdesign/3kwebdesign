@@ -175,8 +175,8 @@ body{
 	visibility: hidden;
 	position: fixed;
 	top: 0;
-	right: -40%;
-	width: 40%;
+	right: -45%;
+	width: 45%;
 	bottom: 0;
 	z-index: 90;
 	background-color: rgba(0, 0, 0, 0.95);
